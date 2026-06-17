@@ -1,0 +1,19 @@
+.landing-page {
+  justify-content: flex-end;
+  padding-bottom: 40px;
+  background-color: var(--white); /* Overriding grey if needed */
+}
+
+.landing-content {
+  margin-bottom: 24px;
+}
+
+.landing-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mb-12 {
+  margin-bottom: 0px; /* handled by gap */
+}

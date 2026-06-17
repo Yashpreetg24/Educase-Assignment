@@ -1,0 +1,44 @@
+.signup-page {
+  background-color: var(--white);
+}
+
+.signup-form {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.radio-group {
+  margin-bottom: 24px;
+}
+
+.radio-label-main {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: var(--text-dark);
+}
+
+.radio-options {
+  display: flex;
+  gap: 24px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+.radio-option input[type="radio"] {
+  accent-color: var(--primary);
+  width: 16px;
+  height: 16px;
+}
+
+.signup-btn {
+  background-color: var(--primary); /* Could also be disabled styling */
+}

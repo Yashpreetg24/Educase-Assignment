@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+  --primary: #6C25FF;
+  --primary-light: #6C25FF4D;
+  --text-dark: #1D2226;
+  --text-light: #6c757d;
+  --bg-color: #f7f8f9;
+  --white: #ffffff;
+  --danger: #ff4b4b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 375px;
+  height: 100vh;
+  max-height: 812px;
+  background-color: var(--bg-color);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow-y: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar hiding for clean UI */
+.app-container::-webkit-scrollbar {
+  display: none;
+}
+.app-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Common Layouts */
+.page {
+  padding: 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+p.subtitle {
+  font-size: 16px;
+  color: var(--text-light);
+  line-height: 1.5;
+  margin-bottom: 24px;
+}

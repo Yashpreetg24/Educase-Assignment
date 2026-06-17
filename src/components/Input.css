@@ -1,0 +1,52 @@
+.input-group {
+  position: relative;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  padding: 16px 14px;
+  font-size: 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  background-color: transparent;
+  outline: none;
+  transition: border-color 0.2s ease;
+  font-family: 'Rubik', sans-serif;
+  color: var(--text-dark);
+}
+
+.input-field:focus {
+  border-color: var(--primary);
+}
+
+.input-label {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background-color: var(--white);
+  padding: 0 4px;
+  font-size: 13px;
+  color: var(--primary);
+  pointer-events: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.input-field:not(:focus):not(:not(:placeholder-shown)) + .input-label,
+.input-field:not(:focus):placeholder-shown + .input-label {
+  /* This works when the input has no value and is not focused */
+  /* We might need a simpler label style for PopX, usually it's always top if there's a label */
+  /* The design actually has the label always on the border in PopX UI */
+}
+
+/* Ensuring background color matches container if needed, but white is standard for the input area */
+.input-group {
+  background-color: var(--white);
+  border-radius: 6px;
+}
+
+.required-asterisk {
+  color: var(--danger);
+}

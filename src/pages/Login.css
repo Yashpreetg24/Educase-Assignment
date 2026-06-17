@@ -1,0 +1,19 @@
+.login-page {
+  background-color: var(--white);
+}
+
+.login-form {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* allows the button to be pushed to bottom if needed, or just let it stack */
+}
+
+.login-btn {
+  background-color: #cbcbcb; /* Usually the button is grayed out until form is valid in PopX, but let's stick to standard primary or gray */
+}
+
+/* In PopX, the login form button is often greyed until valid, but we'll use primary for simplicity */
+form:valid .login-btn {
+  background-color: var(--primary);
+}
