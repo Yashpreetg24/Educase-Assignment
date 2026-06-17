@@ -1,6 +1,6 @@
 # PopX UI Assignment - By Yashpreet Gupta
 
-Hi! Welcome to my assignment submission for the PopX UI React project. I really enjoyed building this and tried my best to make sure it matches the exact Adobe XD design provided.
+Hi! Welcome to my assignment submission for the PopX UI React project. I really enjoyed building this.
 
 Here is a quick overview of what I did and how I built it.
 
